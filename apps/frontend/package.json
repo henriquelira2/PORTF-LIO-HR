@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:web": "turbo run build --scope=frontend --no-deps --includeDependencies",
     "lint": "eslint .",
     "preview": "vite preview"
   },
