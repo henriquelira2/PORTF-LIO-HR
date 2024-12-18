@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-
+import logo from "../assets/logo.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -33,22 +33,29 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
-      <div className="max-w-[1300px] mx-auto bg-green-500 flex justify-between text-gray-200 text-xl items-center px-12 h-20">
-        <a href="#">H.Lira</a>
+      <div className="max-w-[1300px] mx-auto  flex justify-between text-gray-200 text-xl items-center px-12 h-20 ">
+        <a href="#" className=" flex w-20 flex-row justify-center items-center">
+          <img src={logo} /> HR.LIRA
+        </a>
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li>
             <Link to="skills" smooth={true} offset={50} duration={500}>
-              About
+              Sobre
             </Link>
           </li>
           <li>
-            <Link to="portifolio" smooth={true} offset={50} duration={500}>
-              Portifolio
+            <Link to="portfolio" smooth={true} offset={50} duration={500}>
+              Projetos
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} offset={50} duration={500}>
-              Contact
+            <Link to="portfolio" smooth={true} offset={50} duration={500}>
+              CV
+            </Link>
+          </li>
+          <li>
+            <Link to="contato" smooth={true} offset={50} duration={500}>
+              Contato
             </Link>
           </li>
         </ul>
@@ -70,29 +77,40 @@ const Navbar = () => {
                 offset={50}
                 duration={500}
               >
-                About
+                Sobre
               </Link>
             </li>
             <li>
               <Link
-                to="portifolio"
+                to="projetos"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}
                 duration={500}
               >
-                Portifolio
+                Projetos
               </Link>
             </li>
             <li>
               <Link
-                to="contact"
+                to="CV"
                 onClick={closeNav}
                 smooth={true}
                 offset={50}
                 duration={500}
               >
-                Contact
+                CV
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contato"
+                onClick={closeNav}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Contato
               </Link>
             </li>
           </ul>
