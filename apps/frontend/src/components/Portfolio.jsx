@@ -74,7 +74,7 @@ const projects = [
 function Portfolio() {
   return (
     <div className="max-w-[1000px] mx-auto p6 md:my-20" id="projetos">
-      <h2 className="text-3xl font-bold text-gray-200 mb-8">Projetos</h2>
+      <h2 className="text-3xl font-bold text-gray-200 mb-10 text-center">Projetos</h2>
 
       {projects.map((projetc, index) => (
         <Reveal>

@@ -11,7 +11,7 @@ const Contact = () => {
               <h3 className="text-4xl font-semibold mb-5">
                 Sobre <span>Mim</span>
               </h3>
-              <p className="text-justify leading-7 w-11/12 mx-auto">
+              <p className="text-justify leading-7 w-11/12">
                 Sou formado em Ciência da Computação pela Universidade Católica
                 de Pernambuco, onde desenvolvi uma base sólida no
                 desenvolvimento de software. Estou sempre em busca de

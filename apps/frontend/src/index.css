@@ -6,6 +6,11 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   background: linear-gradient(to right, #0874a3, #0441a3);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 h2 {
