@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative">
+    <div className="mt-24 max-w-[1200px] mx-auto relative" id="hero">
       <div className="grid md:grid-cols-2 place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -78,19 +78,30 @@ const Hero = () => {
               }}
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border  border-blue-300 rounded-xl"
             >
-              Download CV
+              <a href="/curriculo.pdf" download="Curriculo-HenriqueLira.pdf">
+                Download CV
+              </a>
             </motion.button>
 
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-blue-300 z-20">
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://github.com/henriquelira2"
+              >
                 <AiOutlineGithub />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://www.linkedin.com/in/wqrwr/"
+              >
                 <AiOutlineLinkedin />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://www.instagram.com/heim_rikl/"
+              >
                 <AiOutlineInstagram />
               </motion.a>
             </div>

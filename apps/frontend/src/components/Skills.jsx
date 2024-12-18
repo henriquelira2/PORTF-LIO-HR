@@ -10,6 +10,7 @@ import {
 } from "react-icons/di";
 import { SiTypescript, SiExpo, SiPhp } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
+import Reveal from "./Reveal";
 
 const skills = [
   {
@@ -45,34 +46,36 @@ const Skills = () => {
       className="max-w-[650px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12 mt-20"
       id="skills"
     >
-      <h2 className="text-3xl font-bold mb-4 text-center">Habilidades</h2>
-      <p className="text-center mb-8">
-        Trabalhei em alguns projetos frontend e fullstack.{"   "} Verique eles{" "}
-        <a href="#">aqui</a>
-      </p>
-      <div
-        className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8
+      <Reveal>
+        <h2 className="text-3xl font-bold mb-4 text-center">Habilidades</h2>
+        <p className="text-center mb-8">
+          Trabalhei em alguns projetos frontend e fullstack.{"   "} Verique eles{" "}
+          <a href="#">aqui</a>
+        </p>
+        <div
+          className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8
                         "
-      >
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="border border-blue-950 p-6 rounded-lg bg-blue-950/20 shadow-lg w-full md:w-1/2"
-          >
-            <h3 className="text-xl font-bold mb-4 text-center">
-              {skill.category}
-            </h3>
-            <div className="grid grid-cols-2 gap-6">
-              {skill.technologies.map((tech, idx) => (
-                <div key={idx} className="flex items-center space-x-2">
-                  <span className="text-2xl">{tech.icone}</span>
-                  <span>{tech.name}</span>
-                </div>
-              ))}
+        >
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="border border-blue-950 p-6 rounded-lg bg-blue-950/20 shadow-lg w-full md:w-1/2"
+            >
+              <h3 className="text-xl font-bold mb-4 text-center">
+                {skill.category}
+              </h3>
+              <div className="grid grid-cols-2 gap-6">
+                {skill.technologies.map((tech, idx) => (
+                  <div key={idx} className="flex items-center space-x-2">
+                    <span className="text-2xl">{tech.icone}</span>
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Reveal>
     </div>
   );
 };

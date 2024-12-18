@@ -39,22 +39,27 @@ const Navbar = () => {
         </a>
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="skills" smooth={true} offset={50} duration={500}>
-              Sobre
+            <Link to="hero" smooth={true} offset={-150} duration={500}>
+              CR
             </Link>
           </li>
           <li>
-            <Link to="portfolio" smooth={true} offset={50} duration={500}>
+            <Link to="skills" smooth={true} offset={-150} duration={500}>
+              Habilidades
+            </Link>
+          </li>
+          <li>
+            <Link to="projetos" smooth={true} offset={-150} duration={500}>
               Projetos
             </Link>
           </li>
           <li>
-            <Link to="portfolio" smooth={true} offset={50} duration={500}>
-              CV
+            <Link to="experiencia" smooth={true} offset={-50} duration={500}>
+              Experiência
             </Link>
           </li>
           <li>
-            <Link to="contato" smooth={true} offset={50} duration={500}>
+            <Link to="contato" smooth={true} offset={-150} duration={500}>
               Contato
             </Link>
           </li>
@@ -71,13 +76,24 @@ const Navbar = () => {
           <ul className="font-semibold text-4x1 space-y-8 mt-24 text-center">
             <li>
               <Link
+                to="hero"
+                onClick={closeNav}
+                smooth={true}
+                offset={-150}
+                duration={500}
+              >
+               CR
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="skills"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-100}
                 duration={500}
               >
-                Sobre
+                Habilidades
               </Link>
             </li>
             <li>
@@ -85,7 +101,7 @@ const Navbar = () => {
                 to="projetos"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-150}
                 duration={500}
               >
                 Projetos
@@ -93,13 +109,13 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="CV"
+                to="experiencia"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-80}
                 duration={500}
               >
-                CV
+                Experiência
               </Link>
             </li>
             <li>
@@ -107,7 +123,7 @@ const Navbar = () => {
                 to="contato"
                 onClick={closeNav}
                 smooth={true}
-                offset={50}
+                offset={-80}
                 duration={500}
               >
                 Contato
