@@ -11,7 +11,7 @@ import Reveal from "./Reveal";
 const projects = [
   {
     img: project1,
-    title: "Projeto X Men",
+    title: "Explorando os X-Men",
     description:
       "Projeto realizando durante a semana do zero ao programodor com o intuito de praticar conceitos basicos e estilos utlizando html e css",
     links: {
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     img: project2,
-    title: "Projeto engenharia 1",
+    title: "Med-On",
     description:
       "Projeto academico criado para a cadeira de Engenharia de Software I, onde foi proposto a criação de uma aplicação web voltado para serviços medicos , onde um paciente poderar marcar qualquer tipo de consulta ou exame para ser atendido por um medico em sua residencia",
     links: {
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     img: project6,
-    title: "Google Glass - antigo",
+    title: "Google Glass - Antigo",
     description:
       "Projeto feito durante o Curso de HTML5 diponibilizado pelo professor Gustavo Guanabara",
     links: {
