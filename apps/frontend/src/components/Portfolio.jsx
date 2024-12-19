@@ -5,15 +5,38 @@ import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
+import project7 from "../assets/project7.png";
+import project8 from "../assets/project8.png";
+import project9 from "../assets/project9.png";
 import { AiFillGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
 
 const projects = [
   {
+    img: project8,
+    title: "Event Manager",
+    description:
+      "O FM NORONHA é o aplicativo que leva até você o melhor da ilha de Fernando de Noronha, um arquipélago paradisíaco que tem as praias mais bonitas do mundo. Com este aplicativo, você pode acompanhar as notícias, as músicas, as entrevistas e a agenda cultural da ilha. ",
+    links: {
+      site: "https://play.google.com/store/apps/details?id=com.atdefn.FM.Noronha",
+      github: "##",
+    },
+  },
+  {
+    img: project7,
+    title: "Event Manager",
+    description:
+      "Este projeto foi desenvolvido como parte do meu Trabalho de Conclusão de Curso II na Universidade Católica de Pernambuco (UNICAP), no curso de Ciência da Computação. O objetivo foi criar um sistema inovador para gerenciar a inscrição e o controle de acesso a eventos universitários, abordando desafios comuns enfrentados por organizadores e participantes.",
+    links: {
+      site: "https://play.google.com/store/apps/details?id=com.gareky1.eventmanager2",
+      github: "https://github.com/henriquelira2/EventManager",
+    },
+  },
+  {
     img: project1,
     title: "Explorando os X-Men",
     description:
-      "Projeto realizando durante a semana do zero ao programodor com o intuito de praticar conceitos basicos e estilos utlizando html e css",
+      "Projeto realizando durante a semana do zero ao programador com o intuito de praticar conceitos basicos e estilos utlizando html e css",
     links: {
       site: "https://henriquelira2.github.io/Projeto-X-Men---Semana-do-Zero-Ao-Programador/",
       github:
@@ -24,10 +47,20 @@ const projects = [
     img: project2,
     title: "Med-On",
     description:
-      "Projeto academico criado para a cadeira de Engenharia de Software I, onde foi proposto a criação de uma aplicação web voltado para serviços medicos , onde um paciente poderar marcar qualquer tipo de consulta ou exame para ser atendido por um medico em sua residencia",
+      "Projeto academico criado para a cadeira de Engenharia de Software I, onde foi proposto a criação de uma aplicação web voltado para serviços médicos , onde um paciente poderar marcar qualquer tipo de consulta ou exame para ser atendido por um médico  em sua residência",
     links: {
       site: "https://medon.netlify.app/usuarioLogin",
       github: "https://github.com/henriquelira2/Projeto-engenharia-1",
+    },
+  },
+  {
+    img: project9,
+    title: "Primeiro portfólio ",
+    description:
+      "Um dos meus primeiros projetos acadêmicos, onde implementei um mini portfólio durante a cadeira de programação web/mobile.",
+    links: {
+      site: "https://pwm-2022-atv.vercel.app/EX04/index.html#sobre-mim",
+      github: "https://github.com/henriquelira2/pwm-2022-ATV",
     },
   },
   {
@@ -71,6 +104,7 @@ const projects = [
     },
   },
 ];
+
 function Portfolio() {
   return (
     <div className="max-w-[1000px] mx-auto p6 md:my-20" id="projetos">
@@ -88,7 +122,7 @@ function Portfolio() {
               <img
                 src={projetc.img}
                 alt={projetc.title}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="w-full h-full object-fill rounded-lg shadow-lg hover:scale-75 transition-transform duration-200"
               />
             </div>
             <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">

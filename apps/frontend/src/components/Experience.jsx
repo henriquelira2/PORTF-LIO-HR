@@ -19,12 +19,12 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="p-8 max-w-[600px] mx-auto" id="experiencia">
+    <div className="p-8 " id="experiencia">
       <div>
         <h1 className="text-4xl text-gray-200 font-bold text-center mb-12">
           Experiência
         </h1>
-        <motion.div className="space-y-8" initial="hidden" animate="visible">
+        <motion.div className=" flex justify-around " initial="hidden" animate="visible">
           {experiences.map((experience, index) => (
             <Reveal>
               <motion.div
@@ -33,7 +33,7 @@ const Experience = () => {
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 1 }}
-                className="max-w-[600px] mx-auto border border-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-blue-700/70"
+                className="max-w-[600px] mx-auto border border-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-blue-700/70 flex flex-col  "
               >
                 <h2 className="text-gray-100 text-2xl font-semibold">
                   {experience.company}
