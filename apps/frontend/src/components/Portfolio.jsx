@@ -11,7 +11,7 @@ import Reveal from "./Reveal";
 const projects = [
   {
     img: project1,
-    title: "Projeto #1",
+    title: "Projeto X Men",
     description:
       "Projeto realizando durante a semana do zero ao programodor com o intuito de praticar conceitos basicos e estilos utlizando html e css",
     links: {
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     img: project2,
-    title: "Projeto #2",
+    title: "Projeto engenharia 1",
     description:
       "Projeto academico criado para a cadeira de Engenharia de Software I, onde foi proposto a criação de uma aplicação web voltado para serviços medicos , onde um paciente poderar marcar qualquer tipo de consulta ou exame para ser atendido por um medico em sua residencia",
     links: {
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     img: project3,
-    title: "Projeto #3",
+    title: "Navegando pelo Mundo de One Piece",
     description:
       "Projeto realizado com objetivo de praticar algums conceitos simples utlizando HTML e CSS",
     links: {
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     img: project4,
-    title: "Projeto #4",
+    title: "Mini Galeria Com Efeito Modal",
     description:
       "Aplicação simples para testar o funcionamento de um efeito modal aplicado em algumas imagens usando HTML, CSS e JavaScript",
     links: {
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     img: project5,
-    title: "Projeto #5",
+    title: "Figma + Encanto",
     description:
       "Projeto realizado com objetivo de pratica tentando recriar um designer do figma usando HTML e CSS",
     links: {
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     img: project6,
-    title: "Projeto #6",
+    title: "Google Glass - antigo",
     description:
       "Projeto feito durante o Curso de HTML5 diponibilizado pelo professor Gustavo Guanabara",
     links: {
@@ -74,7 +74,9 @@ const projects = [
 function Portfolio() {
   return (
     <div className="max-w-[1000px] mx-auto p6 md:my-20" id="projetos">
-      <h2 className="text-3xl font-bold text-gray-200 mb-10 text-center">Projetos</h2>
+      <h2 className="text-3xl font-bold text-gray-200 mb-10 text-center">
+        Projetos
+      </h2>
 
       {projects.map((projetc, index) => (
         <Reveal>
