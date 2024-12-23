@@ -43,14 +43,14 @@ const skills = [
 const Skills = () => {
   return (
     <div
-      className="max-w-[650px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12 mt-20"
+      className="max-w-[650px] mx-auto flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12 mt-20 items-center"
       id="skills"
     >
       <Reveal>
         <h2 className="text-3xl font-bold mb-4 text-center">Habilidades</h2>
        
         <div
-          className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8"
+          className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 "
         >
           {skills.map((skill, index) => (
             <div

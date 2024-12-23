@@ -33,7 +33,7 @@ const Experience = () => {
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 1 }}
-                className="max-w-[600px] mx-auto border border-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-blue-700/70 flex flex-col  "
+                className="max-w-[600px] mx-auto border border-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-blue-700/70 flex flex-col"
               >
                 <h2 className="text-gray-100 text-2xl font-semibold">
                   {experience.company}
